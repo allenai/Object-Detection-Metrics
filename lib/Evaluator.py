@@ -79,8 +79,7 @@ class Evaluator:
         classes = sorted(classes)
         # Precision x Recall is obtained individually by each class
         # Loop through by classes
-        for c in tqdm(classes):
-            tqdm.write(c)
+        for c in classes:
             # Get only detection of class c
             dects = []
             [dects.append(d) for d in detections if d[1] == c]
